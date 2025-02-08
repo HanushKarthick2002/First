@@ -1,0 +1,23 @@
+name: Example GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: hanush.v@straive.com
+        run: echo "Hello, world!"
+        
+      - name: Another step
+        run: echo "This is another step"
